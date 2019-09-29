@@ -23,6 +23,8 @@
   			<artifactId>maven-surefire-plugin</artifactId>
   			<version>3.0.0-M3</version>
   			<configuration>
+  			<testFailureIgnore>true</testFailureIgnore>
+  			
   				<suiteXmlFiles>
   					<suiteXmlFile>docker.xml</suiteXmlFile>
   				</suiteXmlFiles>

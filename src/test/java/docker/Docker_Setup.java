@@ -22,4 +22,13 @@ public class Docker_Setup {
 		
 		Runtime.getRuntime().exec("taskkill /f /im cmd.exe");
 	}
+	
+	//@BeforeTest
+	public void start_zalenium() throws Exception
+	{
+		Runtime.getRuntime().exec("cmd /c start start_zalenium.bat");
+		Thread.sleep(25000);
+	}
+	
+	
 }
